@@ -1,2 +1,3 @@
-# assembly-apps
-Apps created in Assembly for 6502
+# Assembly Apps
+Apps created to learn about Assembly for MOS 6502 and 6507 Processors
+The ideia is to initially develop some apps for Atari 2600 and later on for NES
