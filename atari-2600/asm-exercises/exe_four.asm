@@ -13,11 +13,11 @@ Start:
     cld
     lda #100
 
-    clc
-    adc #5
+    clc                ; Clear the CARRY flag
+    adc #5             ; Add #5 (Decimal) into the accumulator - A now has #105
 
-    sec
-    sbc #10
+    sec                ; Always set the CARRY flag before subtraction
+    sbc #10            ; Remove $10 from the accumulator - A now has #95
 
     org $FFFC           ; End the ROM by adding required values to memory position $FFFC
     .word Start         ; Put 2 bytes with the reset address at memory position $FFFC
